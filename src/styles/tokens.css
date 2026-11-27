@@ -1,0 +1,79 @@
+/* ============================================================
+   Ahmed Fayed — Design tokens
+   Brand: deep navy + champagne gold on warm cream
+   ============================================================ */
+
+:root {
+  /* Brand colours */
+  --navy-900: #0F1A2E;
+  --navy-800: #16233B; /* primary */
+  --navy-700: #1E2F4F;
+  --navy-600: #2A4066;
+  --gold-500: #C2A15D; /* accent */
+  --gold-600: #A8873F;
+  --gold-700: #8A6A2F;
+  --gold-ink: #7E5F26; /* small gold text on cream (AA) */
+  --gold-soft: #E8D9B8;
+
+  --cream-50: #FBF9F4;
+  --cream-100: #F7F4ED; /* page background */
+  --cream-200: #EFEAE0;
+  --cream-300: #E3DCCD;
+
+  --ink: #14161C;
+  --muted: #57606E; /* on cream ≈ 5.4:1 */
+  --muted-2: #7A8290;
+
+  --white: #FFFFFF;
+  --line: rgba(22, 35, 59, 0.14);
+  --line-strong: rgba(22, 35, 59, 0.28);
+  --line-cream: rgba(247, 244, 237, 0.18);
+
+  --success: #1F7A5C;
+  --danger: #B42318;
+  --danger-soft: #FDECEA;
+
+  /* WhatsApp — official green with navy text (≈8:1) */
+  --wa: #25D366;
+  --wa-ink: #0B3D28;
+  --wa-dark: #128C7E;
+
+  /* Typography */
+  --font-display: 'Cormorant', 'Amiri', Georgia, serif;
+  --font-body: 'Montserrat', 'Tajawal', system-ui, sans-serif;
+  --font-ar-display: 'Amiri', 'Cormorant', serif;
+  --font-ar-body: 'Tajawal', 'Montserrat', system-ui, sans-serif;
+
+  /* Radii */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  /* Elevation */
+  --shadow-1: 0 1px 2px rgba(15, 26, 46, 0.06), 0 8px 24px -14px rgba(15, 26, 46, 0.25);
+  --shadow-2: 0 2px 6px rgba(15, 26, 46, 0.07), 0 24px 60px -28px rgba(15, 26, 46, 0.4);
+  --shadow-gold: 0 10px 30px -14px rgba(194, 161, 93, 0.55);
+
+  /* Layout */
+  --container: 1180px;
+  --gutter: clamp(20px, 5vw, 40px);
+  --header-h: 74px;
+  --section-y: clamp(72px, 10vw, 124px);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 0.55s;
+}
+
+html[lang='ar'] {
+  --font-display: var(--font-ar-display);
+  --font-body: var(--font-ar-body);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-h: 64px;
+  }
+}

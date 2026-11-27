@@ -1,0 +1,481 @@
+/* ============================================================
+   Measurement guide — animated SVG figure + 8-step wizard
+   ============================================================ */
+
+.measure {
+  background: var(--cream-100);
+}
+
+.measure-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) 1.15fr;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+}
+
+/* ---------- figure ---------- */
+
+.measure-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: sticky;
+  top: calc(var(--header-h) + 18px);
+}
+
+.figure-card {
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 26px 18px 18px;
+  box-shadow: var(--shadow-1);
+}
+
+.figure-tag {
+  position: absolute;
+  top: 14px;
+  inset-inline-start: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+  background: rgba(194, 161, 93, 0.14);
+  border: 1px solid rgba(194, 161, 93, 0.45);
+  border-radius: var(--r-pill);
+  padding: 5px 12px;
+}
+
+html[lang='ar'] .figure-tag {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 12.5px;
+}
+
+.measure-figure {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  margin: 22px auto 0;
+  direction: ltr;
+}
+
+.figure-body {
+  stroke: var(--navy-800);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: var(--cream-50);
+  fill-opacity: 0.5;
+}
+
+.figure-body > path,
+.figure-body > circle,
+.figure-body > line {
+  fill: var(--cream-50);
+  fill-opacity: 0.55;
+}
+
+.figure-body circle {
+  fill: var(--cream-50);
+}
+
+.figure-body path {
+  fill: none;
+}
+
+.figure-body path[d^='M116'] {
+  stroke-dasharray: 2 4;
+}
+
+.figure-ground {
+  stroke: rgba(22, 35, 59, 0.3);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 5;
+}
+
+/* ---------- zones (gold tape) ---------- */
+
+.figure-zone {
+  stroke: var(--gold-500);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.zone-line,
+.zone-cap {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation:
+    zone-draw 0.85s var(--ease) 0.1s forwards,
+    zone-pulse 2.4s ease-in-out 0.95s infinite;
+}
+
+.zone-cap {
+  stroke-width: 2.2;
+  animation-delay: 0.35s, 1.2s;
+}
+
+.zone-dot {
+  fill: var(--gold-500);
+  stroke: var(--navy-800);
+  stroke-width: 1;
+  opacity: 0;
+  animation:
+    zone-pop 0.35s var(--ease) 0.55s forwards,
+    zone-pulse 2.4s ease-in-out 0.9s infinite;
+}
+
+.zone-dot-b {
+  animation-delay: 0.7s, 1.2s;
+}
+
+.zone-guide {
+  stroke: var(--gold-500);
+  stroke-width: 1.4;
+  stroke-dasharray: 3 5;
+  opacity: 0.65;
+  animation: zone-pulse 2.4s ease-in-out 1s infinite;
+}
+
+.zone-halo {
+  stroke: var(--gold-500);
+  stroke-width: 2.2;
+  stroke-dasharray: 7 6;
+  animation: zone-pulse 2.2s ease-in-out infinite, zone-spin-dash 3s linear infinite;
+}
+
+@keyframes zone-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes zone-pop {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zone-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zone-spin-dash {
+  to {
+    stroke-dashoffset: 26;
+  }
+}
+
+/* weight step: pulse ring breathing */
+.zone-halo {
+  transform-origin: center;
+}
+
+/* ---------- step navigation ---------- */
+
+.step-dots {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.step-dot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border-radius: var(--r-md);
+  border: 1.5px solid var(--line);
+  background: var(--white);
+  color: var(--muted);
+  font-weight: 600;
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease),
+    color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.step-dot:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-2px);
+}
+
+.step-dot .num {
+  font-size: 14px;
+}
+
+.step-dot.is-filled {
+  border-color: rgba(194, 161, 93, 0.55);
+  background: rgba(194, 161, 93, 0.1);
+  color: var(--gold-700);
+}
+
+.step-dot.is-active {
+  border-color: var(--navy-800);
+  background: var(--navy-800);
+  color: var(--gold-500);
+  box-shadow: 0 0 0 3px rgba(22, 35, 59, 0.12);
+}
+
+.step-dot.is-active.is-filled {
+  background: var(--navy-800);
+}
+
+/* ---------- panel ---------- */
+
+.measure-panel {
+  padding: clamp(22px, 3vw, 34px);
+}
+
+.step-counter {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+}
+
+html[lang='ar'] .step-counter {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 13px;
+}
+
+.step-track {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--cream-300);
+  margin-block: 12px 24px;
+  overflow: hidden;
+}
+
+.step-track span {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--gold-600), var(--gold-500));
+  transition: width 0.4s var(--ease);
+}
+
+html[dir='rtl'] .step-track span {
+  background: linear-gradient(270deg, var(--gold-600), var(--gold-500));
+}
+
+/* step body animation on step change */
+.step-body {
+  animation: step-in 0.4s var(--ease);
+}
+
+@keyframes step-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+html[dir='rtl'] .step-body {
+  animation-name: step-in-rtl;
+}
+
+@keyframes step-in-rtl {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.step-where {
+  margin-top: 8px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--gold-ink);
+}
+
+.step-where span {
+  display: inline-block;
+  background: rgba(194, 161, 93, 0.12);
+  border-radius: var(--r-sm);
+  padding: 4px 10px;
+}
+
+.step-tip {
+  margin-top: 10px;
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.measure-field {
+  margin-top: 20px;
+}
+
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrap .input {
+  padding-inline-end: 62px;
+  font-size: 20px;
+  font-weight: 600;
+  height: 62px;
+  text-align: center;
+}
+
+.input-unit {
+  position: absolute;
+  inset-inline-end: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-ink);
+  background: rgba(194, 161, 93, 0.14);
+  border-radius: var(--r-pill);
+  padding: 5px 11px;
+  pointer-events: none;
+}
+
+html[lang='ar'] .input-unit {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.input-wrap .input[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+.step-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.step-actions .btn {
+  flex: 1;
+  max-width: 240px;
+}
+
+.step-actions .btn:first-child {
+  flex: 0 1 auto;
+}
+
+/* completion note */
+
+.measure-done {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--muted);
+  background: var(--cream-100);
+  border: 1px dashed var(--line-strong);
+  transition: color 0.3s var(--ease), background-color 0.3s var(--ease),
+    border-color 0.3s var(--ease);
+}
+
+.measure-done svg {
+  color: var(--muted-2);
+  transition: color 0.3s var(--ease);
+  flex-shrink: 0;
+}
+
+.measure-done.is-on {
+  color: var(--wa-ink);
+  background: rgba(31, 122, 92, 0.1);
+  border-color: rgba(31, 122, 92, 0.4);
+  border-style: solid;
+}
+
+.measure-done.is-on svg {
+  color: var(--success);
+}
+
+/* ---------- responsive + reduced motion ---------- */
+
+@media (max-width: 960px) {
+  .measure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .measure-visual {
+    position: static;
+  }
+
+  .measure-figure {
+    max-height: 320px;
+  }
+
+  .figure-card {
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .step-dots {
+    gap: 5px;
+  }
+
+  .step-dot {
+    min-height: 42px;
+  }
+
+  .step-actions {
+    flex-direction: column-reverse;
+  }
+
+  .step-actions .btn {
+    max-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zone-line,
+  .zone-cap,
+  .zone-dot,
+  .zone-guide,
+  .zone-halo {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+    opacity: 1 !important;
+  }
+
+  .step-body,
+  .price-total {
+    animation: none !important;
+  }
+
+  .marquee-track {
+    animation: none !important;
+  }
+
+  .thread {
+    animation: none !important;
+  }
+}

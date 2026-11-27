@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ahmed Fayed — Bespoke Men's Jackets</title>
+<meta name="description" content="Ahmed Fayed — bespoke made-to-measure men's jackets. Design your jacket or send a photo of any piece. Order on WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ahmed Fayed">
+<meta property="og:title" content="Ahmed Fayed — Bespoke Men's Jackets">
+<meta property="og:description" content="Made-to-measure men's jackets. 1,300 EGP base. Order on WhatsApp.">
+<meta name="theme-color" content="#F7F4ED">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap">
+<style>
+/* ============================================================
+   Ahmed Fayed — Bespoke Men's Jackets (standalone, production)
+   Brand: navy #16233B · gold #C2A15D · cream #F7F4ED · ink #14161C
+   ============================================================ */
+:root{
+  color-scheme:light;
+  --navy:#16233B; --navy-2:#1E2F4F; --gold:#C2A15D; --gold-d:#A8873F; --gold-ink:#7E5F26;
+  --cream:#F7F4ED; --ivory:#FBF9F4; --sand:#EFEAE0; --ink:#14161C; --muted:#57606E; --line:rgba(22,35,59,.16);
+  --wa:#25D366; --wa-ink:#0B3D28; --danger:#B42318;
+  --bg:var(--cream); --fg:var(--ink);
+  --r-sm:8px; --r-md:12px; --r-lg:18px; --r-xl:24px; --r-pill:999px;
+  --shadow-1:0 1px 2px rgba(15,26,46,.06),0 8px 24px -14px rgba(15,26,46,.25);
+  --shadow-2:0 2px 6px rgba(15,26,46,.07),0 24px 60px -28px rgba(15,26,46,.4);
+  --maxw:1180px; --gutter:clamp(18px,5vw,40px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  /* fonts per language */
+  --disp:'Cormorant Garamond',Georgia,serif; --body:'Montserrat',system-ui,sans-serif;
+}
+html[lang="ar"]{ --disp:'Amiri','Cormorant Garamond',serif; --body:'Tajawal','Montserrat',system-ui,sans-serif; }
+*{box-sizing:border-box}
+*{margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-weight:500;font-size:1.0625rem;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none;padding:0}
+:focus-visible{outline:3px solid var(--gold-d);outline-offset:3px;border-radius:4px}
+::selection{background:var(--gold);color:var(--navy)}
+h1,h2,h3{font-weight:600;line-height:1.08;letter-spacing:-.012em;text-wrap:balance;color:var(--navy);font-family:var(--disp)}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{letter-spacing:0;line-height:1.4}
+h1{font-size:clamp(2.6rem,7vw,5.2rem);line-height:1.02}
+h2{font-size:clamp(2.1rem,5vw,3.6rem)}
+h3{font-size:1.5rem}
+p{max-width:72ch}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(56px,8vw,110px);position:relative}
+.band{background:var(--ivory)}
+.band-sand{background:var(--sand)}
+.head{display:grid;gap:12px;margin-bottom:clamp(28px,5vw,52px);max-width:760px}
+.lead{font-size:1.25rem;color:var(--muted);max-width:60ch}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink);display:inline-flex;align-items:center;gap:10px}
+html[lang="ar"] .kicker{letter-spacing:0;text-transform:none;font-size:.95rem}
+.kicker::before{content:"";width:34px;height:2px;background:var(--gold);flex:none}
+/* logical spacing helpers handled by inline-* usage */
+
+/* skip link */
+.skip-link{position:absolute;inset-inline-start:16px;top:-60px;z-index:200;background:var(--navy);color:var(--cream);padding:12px 18px;border-radius:0 0 var(--r-md) var(--r-md);font-weight:600;transition:top .2s var(--ease)}
+.skip-link:focus{top:0}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(247,244,237,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s var(--ease),box-shadow .3s var(--ease)}
+.nav.stuck{border-color:var(--line);box-shadow:0 8px 24px -18px rgba(22,35,59,.5)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-family:var(--disp);font-weight:700;font-size:1.25rem;letter-spacing:.04em}
+html[lang="ar"] .brand{letter-spacing:0}
+.brand svg{width:34px;height:34px}
+.links{display:flex;gap:22px;font-size:.95rem;font-weight:600}
+.links a{position:relative;padding-block:6px;min-height:44px;display:inline-flex;align-items:center}
+.links a::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:inline-start;transition:transform .3s var(--ease)}
+.links a:hover::after{transform:scaleX(1)}
+.nav-right{display:flex;align-items:center;gap:10px}
+/* language toggle */
+.lang{display:inline-flex;align-items:center;gap:0;border:1.5px solid var(--line);border-radius:var(--r-pill);overflow:hidden;min-height:44px}
+.lang button{padding:8px 14px;font-size:.85rem;font-weight:600;color:var(--muted);min-width:44px;min-height:44px;transition:background .2s,color .2s}
+.lang button[aria-pressed="true"]{background:var(--navy);color:var(--cream)}
+.lang .sep{width:1.5px;align-self:stretch;background:var(--line)}
+.menu-btn{display:none;width:46px;height:46px;border-radius:var(--r-md);color:var(--navy);align-items:center;justify-content:center}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 24px;border-radius:var(--r-pill);background:var(--navy);color:var(--cream);font-weight:600;font-size:.98rem;border:1.5px solid var(--navy);transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease),color .25s var(--ease);cursor:pointer;position:relative;overflow:hidden;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-2);background:var(--navy-2)}
+.btn:active{transform:translateY(0)}
+.btn.alt{background:transparent;color:var(--navy);border-color:var(--line)}
+.btn.alt:hover{background:var(--navy);color:var(--cream);border-color:var(--navy)}
+.btn.gold{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.btn.gold:hover{background:var(--gold-d);border-color:var(--gold-d);color:var(--cream)}
+.btn.wa{background:var(--wa);color:var(--wa-ink);border-color:var(--wa)}
+.btn.wa:hover{background:#1FBE5B;border-color:#1FBE5B;color:var(--wa-ink)}
+.btn.sm{min-height:44px;padding:9px 18px;font-size:.9rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:radial-gradient(1100px 560px at 80% 35%,rgba(194,161,93,.14),transparent 60%),var(--cream);border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(194,161,93,.05) 0 2px,transparent 2px 14px);pointer-events:none;-webkit-mask:linear-gradient(90deg,transparent 40%,#000 100%);mask:linear-gradient(90deg,transparent 40%,#000 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,56px);align-items:center;padding-block:clamp(36px,6vw,80px) clamp(48px,7vw,96px)}
+.hero-copy{display:grid;gap:18px}
+.hero h1 span{display:block}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
+.trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:10px;padding-top:18px;border-top:1px solid var(--line)}
+.trust div{display:grid;gap:2px;font-size:.95rem;color:var(--muted)}
+.trust b{font-size:1.7rem;color:var(--gold-ink);line-height:1;font-family:var(--disp)}
+/* hero jacket image */
+.stage{position:relative;display:grid;place-items:center}
+.jacket-frame{position:relative;width:100%;max-width:460px;aspect-ratio:4 / 5;border-radius:var(--r-xl);background:radial-gradient(circle at 50% 38%,#fff 0,var(--ivory) 72%);border:1.5px solid var(--line);box-shadow:var(--shadow-2);padding:clamp(16px,3vw,28px);display:grid;place-items:center;overflow:hidden}
+.jacket-3d{width:100%;height:100%;object-fit:contain;object-position:center;aspect-ratio:auto}
+/* tape divider (single, finite) */
+.tape{height:28px;background:repeating-linear-gradient(90deg,var(--gold-ink) 0 1.5px,transparent 1.5px 12px) 0 100%/12px 12px repeat-x,repeating-linear-gradient(90deg,var(--gold-ink) 0 1.5px,transparent 1.5px 60px) 0 100%/60px 22px repeat-x;border-bottom:2px solid var(--gold-ink);opacity:.5}
+@media (prefers-reduced-motion:reduce){.tape{background-position:0 100%}}
+
+/* ---------- services ---------- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.svc{background:var(--cream);border:1.5px solid var(--line);border-radius:var(--r-xl);padding:30px;display:grid;gap:16px;position:relative;overflow:hidden;transition:transform .4s var(--ease),border-color .3s,box-shadow .4s}
+.svc:nth-child(2){background:var(--sand)}
+.svc:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:var(--shadow-2)}
+.svc .art{height:230px;display:grid;place-items:center;border-radius:var(--r-lg);background:var(--ivory);overflow:hidden;position:relative}
+.svc .art img{width:100%;height:100%;object-fit:contain;object-position:center;padding:14px}
+.svc ul{display:grid;gap:8px}
+.svc li{display:flex;gap:10px;align-items:flex-start}
+.svc li::before{content:"";flex:none;width:16px;height:16px;margin-top:6px;border-radius:50%;background:var(--gold) radial-gradient(circle at 50% 50%,var(--navy) 0 2px,transparent 2.5px)}
+.price{font-size:2.2rem;font-weight:700;color:var(--gold-ink);line-height:1;font-family:var(--disp)}
+.price small{font-size:1rem;color:var(--muted);font-weight:500;margin-inline-start:6px}
+
+/* ---------- process ---------- */
+.proc{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.ps{display:grid;gap:8px;justify-items:center;text-align:center}
+.ps .dot{width:56px;height:56px;border-radius:50%;background:var(--ivory);border:2px solid var(--line);display:grid;place-items:center;font-weight:700;color:var(--muted)}
+.ps p{font-size:.95rem;color:var(--muted);max-width:24ch}
+
+/* ---------- studio ---------- */
+.studio{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,52px);align-items:start}
+.pv{position:sticky;top:96px;display:grid;gap:14px}
+.pvbox{background:radial-gradient(circle at 50% 38%,#fff 0,var(--cream) 72%);border:1.5px solid var(--line);border-radius:var(--r-xl);padding:20px;display:grid;place-items:center;min-height:420px;position:relative;overflow:hidden}
+.pvbox img{width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center}
+.ctl{display:grid;gap:24px}
+.grp h3{font-size:1.3rem;margin-bottom:10px;font-family:var(--disp)}
+.fab-row,.sw-row{display:flex;flex-wrap:wrap;gap:10px}
+.fab{border:1.5px solid var(--line);background:var(--ivory);border-radius:var(--r-md);padding:8px;display:grid;gap:6px;justify-items:center;width:104px;min-height:44px;transition:border-color .2s,transform .2s}
+.fab:hover{transform:translateY(-2px);border-color:var(--gold)}
+.fab[aria-pressed="true"]{border-color:var(--navy);box-shadow:0 0 0 2px var(--navy) inset}
+.fab i{display:block;width:100%;height:44px;border-radius:8px;background-color:var(--navy);position:relative;overflow:hidden}
+.fab i::after{content:"";position:absolute;inset:0}
+.fab span{font-size:.95rem;font-weight:600}
+.sw{display:grid;gap:6px;justify-items:center;width:78px;padding:0;min-height:44px}
+.sw i{width:48px;height:48px;border-radius:50%;box-shadow:0 0 0 2px var(--ivory),0 0 0 3px var(--line);transition:transform .2s}
+.sw:hover i{transform:scale(1.08)}
+.sw[aria-pressed="true"] i{box-shadow:0 0 0 3px var(--ivory),0 0 0 5px var(--navy)}
+.sw span{font-size:.9rem;font-weight:600}
+.tg{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;text-align:start;border:1.5px solid var(--line);background:var(--ivory);border-radius:var(--r-lg);padding:13px 16px;min-height:44px;margin-bottom:10px;transition:border-color .2s}
+.tg:hover{border-color:var(--gold)}
+.tg b{display:block}.tg small{color:var(--muted);font-size:.95rem}
+.tg .k{flex:none;width:48px;height:28px;border-radius:99px;background:var(--line);position:relative;transition:background .25s}
+.tg .k::after{content:"";position:absolute;top:3px;inset-inline-start:3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.25);transition:transform .3s var(--ease)}
+.tg[aria-pressed="true"]{border-color:var(--navy)}
+.tg[aria-pressed="true"] .k{background:var(--navy)}
+.tg[aria-pressed="true"] .k::after{transform:translateX(20px)}
+html[dir="rtl"] .tg[aria-pressed="true"] .k::after{transform:translateX(-20px)}
+.emb{display:grid;gap:6px;margin-bottom:10px}
+.emb label{font-weight:600}
+.emb input{padding:11px 14px;border:1.5px solid var(--line);border-radius:var(--r-md);background:var(--ivory);min-height:44px}
+.totalbox{background:var(--navy);color:var(--cream);border-radius:var(--r-xl);padding:22px 24px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.totalbox .n{font-size:3rem;font-weight:700;color:var(--gold);line-height:1;font-family:var(--disp)}
+.totalbox .n small{font-size:1rem;color:var(--cream);margin-inline-start:6px}
+.totalbox p{opacity:.85;font-size:.95rem;max-width:30ch}
+
+/* ---------- measure ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html[dir="rtl"] .panel .body{padding:0 72px 16px 16px}
+
+
+
+
+
+
+
+
+
+/* ---------- photo service (redesigned, calm motion) ---------- */
+.photo{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,52px);align-items:start}
+.drop{position:relative;border:2px dashed var(--gold);border-radius:var(--r-xl);background:var(--cream);min-height:380px;display:grid;place-items:center;text-align:center;cursor:pointer;overflow:hidden;transition:border-color .2s var(--ease),background .2s var(--ease)}
+.drop:hover,.drop:focus-visible{background:var(--ivory);border-color:var(--navy)}
+.drop.over{background:var(--ivory);border-color:var(--navy);border-style:solid}
+.drop:focus-visible{outline:3px solid var(--gold-d);outline-offset:3px}
+.drop input[type="file"]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.drop .empty{display:grid;gap:10px;justify-items:center;padding:28px;pointer-events:none}
+.drop .empty svg{width:min(100%,200px);height:auto;color:var(--gold-ink)}
+.drop .empty b{font-size:1.3rem;color:var(--navy)}
+.drop .empty small{color:var(--muted)}
+/* preview fade-in (opacity+transform only, 300ms, no loop/shift) */
+.drop .prev{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:var(--ivory);padding:14px;opacity:0;transform:scale(.98);transition:opacity .3s var(--ease),transform .3s var(--ease);display:none}
+.drop.has .prev{display:block;opacity:1;transform:scale(1)}
+.drop.has .empty{display:none}
+.drop-change{position:absolute;inset-inline-end:12px;bottom:12px;z-index:5;background:var(--navy);color:var(--cream);padding:8px 14px;border-radius:var(--r-pill);font-size:.85rem;font-weight:600;min-height:40px;display:none;align-items:center}
+.drop.has .drop-change{display:inline-flex}
+.drop-err{color:var(--danger);font-size:.9rem;font-weight:600;margin-top:8px;min-height:1em}
+.drop-name{position:absolute;inset-inline-start:50%;bottom:12px;transform:translateX(-50%);background:var(--navy);color:var(--cream);padding:5px 14px;border-radius:99px;font-size:.85rem;max-width:80%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:none}
+.drop.has .drop-name{display:block}
+html[dir="rtl"] .drop-name{transform:translateX(50%)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--line);background:var(--ivory);border-radius:99px;padding:9px 16px;min-height:44px;font-weight:600;transition:border-color .2s,background .2s}
+.chip:hover{border-color:var(--gold)}
+.chip[aria-pressed="true"]{background:var(--navy);color:var(--cream);border-color:var(--navy)}
+.fld{display:grid;gap:8px}
+.fld label{font-weight:600}
+.fld textarea,.fld input{padding:12px 14px;border:1.5px solid var(--line);border-radius:var(--r-md);background:var(--ivory);width:100%;min-width:0;min-height:44px}
+.fld textarea{min-height:100px;resize:vertical}
+.pform{display:grid;gap:18px}
+.hint{font-size:.95rem;color:var(--muted);border-inline-start:3px solid var(--gold);padding-inline-start:14px}
+@media (prefers-reduced-motion:reduce){
+  .drop .prev{transition:none;transform:none}
+  .drop.over{transform:none}
+}
+
+/* ---------- why / nums ---------- */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.num{border-top:3px solid var(--gold);padding-top:14px}
+.num b{display:block;font-size:clamp(2.4rem,5vw,3.6rem);line-height:1;font-variant-numeric:tabular-nums;font-family:var(--disp)}
+.num span{color:var(--muted);display:block}
+
+/* ---------- faq ---------- */
+.faq{display:grid;gap:12px;max-width:860px}
+details{background:var(--ivory);border:1.5px solid var(--line);border-radius:var(--r-lg);transition:border-color .2s}
+details[open]{border-color:var(--navy)}
+summary{list-style:none;cursor:pointer;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px;font-weight:600;font-size:1.15rem;min-height:56px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:34px;height:34px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-size:1.3rem;transition:transform .3s,background .2s}
+details[open] summary::after{transform:rotate(135deg);background:var(--gold)}
+details .ans{padding:0 20px 18px;color:var(--muted);display:grid;gap:4px}
+
+/* ---------- cta + footer ---------- */
+.cta{text-align:center;background:var(--navy);color:var(--cream);position:relative;overflow:hidden}
+.cta .wrap{position:relative;display:grid;gap:16px;justify-items:center}
+.cta h2{color:var(--cream)}
+footer{background:var(--ivory);padding-block:30px calc(30px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.95rem}
+/* whatsapp fab */
+.wafab{position:fixed;inset-inline-end:max(14px,env(safe-area-inset-right,0px));bottom:max(14px,env(safe-area-inset-bottom,0px));z-index:55;display:inline-flex;align-items:center;gap:8px;background:var(--wa);color:var(--wa-ink);padding:14px 16px;border-radius:99px;font-weight:700;box-shadow:var(--shadow-2);min-height:48px}
+/* scroll reveal (visible at rest; animates in supporting browsers; disabled w/ reduced motion) */
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .rv{animation:rv linear forwards;animation-timeline:view();animation-range:entry 5% entry 40%}
+    @keyframes rv{from{opacity:.01;transform:translateY(30px)}to{opacity:1;transform:none}}
+  }
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .links{display:none}
+  .hero .wrap,.two,.studio,.meas,.photo{grid-template-columns:1fr}
+  .proc{grid-template-columns:repeat(2,1fr)}
+  .nums{grid-template-columns:1fr 1fr}
+  .pv,.figbox{position:static}
+  .jacket-frame{max-width:380px}
+}
+@media (max-width:520px){
+  .proc{grid-template-columns:1fr}
+  .trust{grid-template-columns:1fr;gap:8px}
+  .nums{grid-template-columns:1fr}
+  .svc{padding:22px}
+  .panel .body{padding:0 16px 16px 16px}
+  html[dir="rtl"] .panel .body{padding:0 16px 16px 16px}
+  .jacket-frame{aspect-ratio:auto;max-width:320px}
+  .btn{width:100%}
+  .ctas .btn{width:auto}
+}
+/* reduced motion: everything static */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .tape{animation:none}
+}
+
+/* ============================================================
+   AUDIT FIXES (applied last; non-breaking)
+   ============================================================ */
+button,input,select,textarea{font:inherit}
+
+/* 1) mobile header: no overflow, language always visible, no dup CTA */
+.brand{white-space:nowrap;flex:0 1 auto;min-width:0}
+.brand span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav .wrap{flex-wrap:nowrap;gap:10px}
+.nav-right{flex-shrink:0}
+.lang{flex-shrink:0}
+@media (max-width:1000px){
+  .links{display:none}
+  .menu-btn{display:inline-flex;flex:none}
+  .nav .links{position:absolute;top:100%;inset-inline:0;display:none;flex-direction:column;gap:2px;padding:10px var(--gutter) 18px;background:var(--ivory);border-bottom:1px solid var(--line);box-shadow:var(--shadow-2)}
+  .nav.menu-open .links{display:flex}
+  .nav .links a{min-height:48px;padding-inline:4px}
+}
+@media (max-width:520px){
+  .nav-right .btn{display:none}                 /* Order now hidden on mobile; floating WA remains */
+  .nav .wrap{min-height:64px}
+}
+@media (max-width:520px){
+  .brand{font-size:1.05rem;gap:8px}
+  .brand svg{width:30px;height:30px}
+}
+html[dir="rtl"] .nav .wrap{flex-direction:row}
+.lang button,.menu-btn,.btn.sm,.chip,.sw,.fab,.tg,.step>button,summary,.drop-change,.wafab{min-height:44px;min-width:44px}
+
+/* 2) service card images: never crop, centred, stable frame */
+.svc .art{position:relative;height:auto;min-height:0;aspect-ratio:4 / 5;background:var(--cream);overflow:hidden;border-radius:var(--r-lg)}
+.svc .art img{position:absolute;inset:0;width:100%!important;height:100%!important;max-width:none!important;object-fit:contain;object-position:center;padding:12px;background:var(--cream)}
+.svc .art.svc-icon{aspect-ratio:4 / 3;background:var(--cream);display:grid;place-items:center;padding:14px}
+.svc .art.svc-icon svg{width:100%;height:100%;color:var(--gold-ink)}
+
+/* 3) studio: illustrative image + selected chips (no fake colour change) */
+.pv-note{font-size:.85rem;color:var(--muted);text-align:center}
+.pv-sel{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.pv-sel .chip{background:var(--ivory);border-color:var(--gold);color:var(--navy);font-size:.85rem;min-height:0;min-width:0;padding:5px 12px;cursor:default}
+.pv-sel .chip .swatch-dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-inline-end:6px;vertical-align:-2px;border:1px solid var(--line)}
+
+/* 4) circle numbers centred + step titles aligned */
+.proc{align-items:start}
+.ps{align-content:start;align-items:start}
+.ps .dot{display:grid;place-items:center;line-height:1;padding:0;text-align:center}
+.ps h3{margin-top:0}
+
+.num,.dot,.n{font-variant-numeric:tabular-nums}
+html[lang="ar"] .dot,html[lang="ar"] .n,html[lang="ar"] .num{line-height:1}
+
+/* 5) misc visual */
+body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+.jacket-frame{background:var(--cream)}
+.svc .art,.pvbox{background:var(--cream)}
+.pvbox{box-shadow:none}
+.fld textarea,.fld input,.inp input,.emb input,input,textarea,select{font-family:inherit;font-size:inherit;font-weight:500;line-height:1.5}
+@media (max-width:520px){
+  body{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+  .wafab{min-width:48px;min-height:48px;padding:12px;border-radius:50%;justify-content:center}
+  .wafab span{display:none}
+}
+
+/* 6) measurement figure + markers */
+
+
+
+
+
+
+
+
+
+
+/* AF monogram — theme-coloured, transparent, no frame */
+.brand .af-mark{width:72px;height:45px;flex:none;mix-blend-mode:multiply}
+@media (max-width:520px){ .brand .af-mark{width:56px;height:35px} }
+
+/* reduced motion (again, last) */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important;scroll-behavior:auto!important}
+  .mk{transition:none}
+}
+
+/* ===== measure guide (scoped to #measure) ===== */
+#measure{padding:clamp(40px,7vw,88px) clamp(16px,4vw,40px)}
+#measure .in{max-width:1120px;margin:auto}
+#measure h2{font:700 clamp(2rem,5vw,3.2rem)/1.1 var(--disp);color:var(--navy)}
+#measure .lead{max-width:60ch;color:var(--muted);margin:12px 0 32px}
+#measure .grid{display:grid;gap:28px;align-items:start}
+@media(min-width:880px){#measure .grid{grid-template-columns:5fr 6fr}#measure .stage{position:sticky;top:16px}}
+#measure .stage{background:radial-gradient(circle at 50% 35%,#fff,var(--ivory) 70%);border:1.5px solid var(--line);border-radius:22px;padding:12px;background-image:repeating-linear-gradient(0deg,rgba(22,35,59,.045) 0 1px,transparent 1px 26px),repeating-linear-gradient(90deg,rgba(22,35,59,.045) 0 1px,transparent 1px 26px)}
+#measure #fig{display:block;width:100%;aspect-ratio:5/7;max-height:80vh;direction:ltr}
+#measure #front, #measure #back{transition:opacity .35s var(--ease)}
+#measure #fig[data-v=f] #back, #measure #fig[data-v=b] #front{opacity:0}
+#measure .hs{cursor:pointer;transition:opacity .3s}
+#measure .hs .r{fill:#fff;stroke:var(--gold);stroke-width:2.5}.hs .c{fill:var(--gold)}
+#measure .hs:hover .r{fill:var(--gold)}
+#measure #fig.pl .hs{opacity:.16}#fig.pl .hs.on{opacity:0}
+#measure .gd{fill:none;stroke:#16233B;stroke-opacity:.35;stroke-width:1.5;stroke-dasharray:4 4}
+#measure .bk, #measure .sc{fill:#16233B}.scr{fill:#F7F4ED}.kg{font:700 7px var(--body);fill:#16233B}
+#measure .ft{fill:none;stroke:#C2A15D;stroke-width:2}
+#measure .back{fill:none;stroke:#C2A15D;stroke-opacity:.55;stroke-dasharray:3 4}
+#measure .tp{fill:none;stroke:#C2A15D;stroke-dasharray:100}
+#measure .tk{fill:none;stroke:#16233B;opacity:.55}
+#measure .mk{fill:none;stroke:#fff;stroke-width:14;stroke-dasharray:100}
+#measure .pt{fill:#16233B;stroke:#F7F4ED;stroke-width:2}
+#measure [data-a=pop]{transform-box:fill-box;transform-origin:center}
+#measure .lab rect{fill:#16233B}.lab text{fill:#F7F4ED;font:600 12px var(--body)}
+#measure .lab.se rect{fill:#C2A15D}.lab.se text{fill:#14161C;font-weight:700;font-size:10.5px}
+#measure #hint{text-align:center;color:var(--muted);font-size:.9rem;padding:8px 8px 4px}
+#measure .chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;padding:0;list-style:none}
+#measure .chips button{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:8px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--ivory);text-align:start;font-weight:600;font-size:.95rem;transition:background .25s,border-color .25s}
+#measure .chips button:hover{border-color:var(--gold)}
+#measure .chips button[aria-current=true]{background:var(--navy);color:var(--cream);border-color:var(--navy)}
+#measure .nb{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;line-height:1;font-weight:700;font-size:.85rem;border:1.5px solid var(--gold);color:var(--gold-ink);background:var(--cream)}
+#measure .chips button[aria-current=true] .nb{background:var(--gold);color:var(--navy)}
+#measure .chips .done .nb{background:var(--gold);color:var(--navy)}
+#measure .panel{margin-top:16px;background:var(--ivory);border:1.5px solid var(--line);border-radius:18px;padding:22px;min-height:230px}
+#measure .panel h3{display:flex;align-items:center;gap:12px;font:700 1.6rem var(--disp);color:var(--navy);margin-bottom:8px}
+#measure .panel .nb{width:32px;height:32px}
+#measure .panel p{max-width:60ch}.empty{color:var(--muted)}
+#measure .tip{margin-top:10px;padding-inline-start:14px;border-inline-start:3px solid var(--gold);color:var(--muted);font-size:.95rem}
+#measure .tip b{color:var(--gold-ink)}
+#measure .fld{display:flex;align-items:center;gap:10px;margin-top:16px}
+#measure .fld input{width:140px;min-height:48px;border:1.5px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;font:600 1.1rem var(--body);direction:ltr;text-align:center;color:var(--ink)}
+#measure .fld span{font-weight:600;color:var(--muted)}
+#measure .err{min-height:1.4em;color:var(--danger);font-size:.88rem;margin-top:6px}
+#measure .nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+#measure .nav button, #measure .send{min-height:48px;padding:0 20px;border:1.5px solid var(--navy);border-radius:999px;font-weight:600}
+#measure .nav .pri{background:var(--navy);color:var(--cream)}
+#measure .prog{margin-top:20px}
+#measure .bar2{height:8px;border-radius:9px;background:var(--sand);overflow:hidden;margin-top:8px}
+#measure .bar2 i{display:block;height:100%;width:0;background:var(--gold);transition:width .4s var(--ease)}
+#measure .send{margin-top:14px;background:#25D366;border-color:#25D366;color:#0B3D28}
+#measure .send[disabled]{opacity:.4;cursor:not-allowed}
+@media(prefers-reduced-motion:reduce){#measure *{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ahmed Fayed">
+      <!-- AF monogram: navy letters + hanger, gold needle & thread, navy button. Transparent so it melts into the cream theme. -->
+      <svg class="af-mark" viewBox="0 0 180 112" aria-hidden="true" width="58" height="36">
+        <g fill="none" stroke="var(--navy)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M44 33 C44 22 35 18 32 25 C29 32 38 36 42 29"/>
+          <path d="M28 90 L50 36 L56 36 L78 90"/>
+          <path d="M34 69 L70 69"/>
+          <path d="M84 34 L84 90 M84 34 L124 34 M84 56 L113 56"/>
+        </g>
+        <!-- sweeping tailor's tape loop -->
+        <path d="M32 76 C58 72 84 54 110 56 C134 58 145 74 135 88 C126 100 96 98 72 87" fill="none" stroke="var(--navy)" stroke-width="7" stroke-linecap="round"/>
+        <!-- gold needle + thread -->
+        <path d="M96 108 L126 28" fill="none" stroke="var(--gold)" stroke-width="4.5" stroke-linecap="round"/>
+        <ellipse cx="128" cy="25" rx="3.4" ry="7" fill="none" stroke="var(--gold)" stroke-width="2.4" transform="rotate(18 128 25)"/>
+        <path d="M128 18 C150 12 152 40 139 62 C130 78 104 80 82 72" fill="none" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M82 72 C70 76 64 86 70 96" fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="5 6"/>
+        <!-- four-hole button -->
+        <circle cx="120" cy="68" r="11" fill="var(--navy)" stroke="var(--gold)" stroke-width="2"/>
+        <g fill="var(--cream)"><circle cx="116.5" cy="64.5" r="1.8"/><circle cx="123.5" cy="64.5" r="1.8"/><circle cx="116.5" cy="71.5" r="1.8"/><circle cx="123.5" cy="71.5" r="1.8"/></g>
+      </svg>
+      <span data-i18n="brand">Ahmed Fayed</span>
+    </a>
+    <nav class="links" id="navLinks" aria-label="Main" data-i18n-aria="navMain">
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#studio" data-i18n="navStudio">Design</a>
+      <a href="#measure" data-i18n="navMeasure">Measure</a>
+      <a href="#photo" data-i18n="navPhoto">From a photo</a>
+      <a href="#faq" data-i18n="navFaq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <button class="menu-btn" type="button" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="navLinks" data-i18n-aria="menuLabel">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="lang" role="group" aria-label="Language" data-i18n-aria="langLabel">
+        <button type="button" id="langEn" aria-pressed="true">EN</button>
+        <span class="sep" aria-hidden="true"></span>
+        <button type="button" id="langAr" aria-pressed="false" lang="ar">عربي</button>
+      </div>
+      <a class="btn sm wa" href="https://wa.me/201093096278" target="_blank" rel="noopener noreferrer" data-i18n="navOrder">Order now</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="kicker" data-i18n="heroKick">Made-to-measure jackets by a master tailor</span>
+        <h1><span data-i18n="heroT1">Tailored</span><span data-i18n="heroT2">on your</span><span data-i18n="heroT3">measure.</span></h1>
+        <p class="lead" data-i18n="heroLead">Order a jacket cut for you alone, or send a photo of any piece and we will sew it in your size.</p>
+        <div class="ctas">
+          <a class="btn" href="#studio" data-i18n="heroCta1">Design your jacket</a>
+          <a class="btn alt" href="#photo" data-i18n="heroCta2">Send a photo</a>
+        </div>
+        <div class="trust">
+          <div><b class="num">25+</b><span data-i18n="trust1">years of tailoring</span></div>
+          <div><b class="num">14</b><span data-i18n="trust2">days to deliver</span></div>
+          <div><b class="num">1</b><span data-i18n="trust3">free adjustment</span></div>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="jacket-frame"><img class="jacket-3d" src="/jaket.jpg" alt="" width="896" height="1200" fetchpriority="high" decoding="async"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tape" aria-hidden="true"></div>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section band" id="services">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker" data-i18n="svcKick">Two ways to get your piece</span>
+        <h2 data-i18n="svcTitle">Two ways to get your piece.</h2>
+      </div>
+      <div class="two">
+        <article class="svc rv">
+          <div class="art"><img src="/jaket.jpg" alt="Made-to-measure men's jacket" data-i18n-alt="jacketAlt" width="896" height="1200" loading="lazy" decoding="async"></div>
+          <div><h3 data-i18n="svc1Title">Tailored on your measure</h3></div>
+          <ul>
+            <li data-i18n="svc1a">Pick fabric, colour and details</li>
+            <li data-i18n="svc1b">Follow the animated guide for 8 measurements</li>
+            <li data-i18n="svc1c">The tailor checks your sizes by call before cutting</li>
+          </ul>
+          <div class="price">1,300 EGP<small data-i18n="svc1PriceNote">base price</small></div>
+          <a class="btn" href="#studio" data-i18n="svc1Cta">Design your jacket</a>
+        </article>
+        <article class="svc rv">
+          <div class="art svc-icon" aria-hidden="true"><svg viewBox="0 0 100 100"><rect x="12" y="24" width="76" height="58" rx="8" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="34" cy="44" r="7" fill="currentColor"/><path d="M18 76 L42 52 L60 70 L74 58 L88 76" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M64 18 L82 18 L82 36" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M68 14 L86 14 L86 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></div>
+          <div><h3 data-i18n="svc2Title">Send us a photo</h3></div>
+          <ul>
+            <li data-i18n="svc2a">Any piece you love: jacket, trousers, shirt</li>
+            <li data-i18n="svc2b">We study the photo and cut a pattern in your size</li>
+            <li data-i18n="svc2c">The tailor quotes the price after seeing the picture</li>
+          </ul>
+          <div class="price"><span data-i18n="svc2Price">Any piece</span><small data-i18n="svc2PriceNote">quoted after the photo</small></div>
+          <a class="btn gold" href="#photo" data-i18n="svc2Cta">Send a photo</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker" data-i18n="procKick">How it works</span>
+        <h2 data-i18n="procTitle">Five steps, start to finish</h2>
+      </div>
+      <ol class="proc" id="proc">
+        <li class="ps rv"><span class="dot num">1</span><h3 data-i18n="p1">Choose</h3><p data-i18n="p1d">Fabric, colour and details.</p></li>
+        <li class="ps rv"><span class="dot num">2</span><h3 data-i18n="p2">Measure</h3><p data-i18n="p2d">Animated 8-step guide.</p></li>
+        <li class="ps rv"><span class="dot num">3</span><h3 data-i18n="p3">Confirm</h3><p data-i18n="p3d">Tailor checks sizes by call.</p></li>
+        <li class="ps rv"><span class="dot num">4</span><h3 data-i18n="p4">Order</h3><p data-i18n="p4d">Deposit 30–50% on WhatsApp.</p></li>
+        <li class="ps rv"><span class="dot num">5</span><h3 data-i18n="p5">Deliver</h3><p data-i18n="p5d">~14 days, one free adjustment.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= STUDIO ================= -->
+  <section class="section band" id="studio">
+    <div class="wrap">
+      <div class="head rv">
+        <h2 data-i18n="studioTitle">Build your jacket</h2>
+        <p class="lead" data-i18n="studioLead">Every choice updates the preview and price. Extras are priced with the tailor.</p>
+      </div>
+      <div class="studio">
+        <div class="pv">
+          <div class="pvbox" id="pv">
+            <img src="/jaket.jpg" alt="Your jacket preview" data-i18n-alt="pvAlt" width="896" height="1200" loading="lazy" decoding="async">
+          </div>
+          <p class="pv-note" data-i18n="pvNote">Illustrative image. Your chosen colour and fabric are shown separately and in the order summary.</p>
+          <div class="pv-sel" id="pvSel" aria-live="polite"></div>
+          <div class="totalbox" aria-live="polite">
+            <div><div class="n"><span id="total" class="num">1,300</span><small>EGP</small></div><p id="ptxt" data-i18n="priceNote">Base price. Details are priced with the tailor.</p></div>
+            <a class="btn gold" id="waJ" href="https://wa.me/201093096278" target="_blank" rel="noopener noreferrer" data-i18n="waOrder">Order on WhatsApp</a>
+          </div>
+        </div>
+        <div class="ctl">
+          <div class="grp rv">
+            <h3 data-i18n="grpFabric">Fabric</h3>
+            <div class="fab-row" id="fabs"></div>
+          </div>
+          <div class="grp rv">
+            <h3 data-i18n="grpColour">Colour</h3>
+            <div class="sw-row" id="cols"></div>
+          </div>
+          <div class="grp rv">
+            <h3 data-i18n="grpDetails">Details</h3>
+            <button class="tg" id="tSilk" aria-pressed="false"><span><b data-i18n="tSilk">Silk lining</b><small data-i18n="tSilkD">Breathable silk inside.</small></span><span class="k" aria-hidden="true"></span></button>
+            <button class="tg" id="tPocket" aria-pressed="false"><span><b data-i18n="tPocket">Extra pocket</b><small data-i18n="tPocketD">Inside phone pocket.</small></span><span class="k" aria-hidden="true"></span></button>
+            <button class="tg" id="tName" aria-pressed="false"><span><b data-i18n="tName">Embroidered name</b><small data-i18n="tNameD">Your name inside.</small></span><span class="k" aria-hidden="true"></span></button>
+            <div class="emb" id="embWrap" hidden>
+              <label for="embName" data-i18n="embLabel">Name to embroider</label>
+              <input id="embName" type="text" maxlength="14" placeholder="Ahmed" data-i18n-ph="embPh">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MEASURE ================= -->
+  <section id="measure" class="ms" aria-labelledby="mT">
+<div class="in">
+<h2 id="mT" data-m="title"></h2>
+<p class="lead" data-m="lead"></p>
+<div class="grid">
+<figure class="stage">
+<svg id="fig" viewBox="0 0 300 600" data-v="f" role="img" aria-labelledby="figT">
+<title id="figT"></title>
+<defs>
+<g id="arm"><path d="M98 136C86 138 80 150 79 166L72 240C70 270 70 290 70 304L85 306C86 280 90 262 93 238L104 174Z"/><ellipse cx="77" cy="314" rx="9" ry="13"/></g>
+<g id="b"><ellipse cx="150" cy="68" rx="25" ry="30"/><rect x="138" y="92" width="24" height="34"/>
+<path d="M94 140C112 132 128 128 138 123L162 123C172 128 188 132 206 140L200 190C192 225 189 245 188 262C192 288 199 304 200 318L100 318C101 304 108 288 112 262C111 245 108 225 100 190Z"/>
+<use href="#arm"/><use href="#arm" transform="translate(300 0) scale(-1 1)"/>
+<path d="M100 316H200L194 556H157L150 352L143 556H106Z"/><ellipse cx="128" cy="558" rx="22" ry="6"/><ellipse cx="172" cy="558" rx="22" ry="6"/></g>
+<g id="sl"><path d="M98 136C86 138 80 150 79 166L76 205L100 210L106 172Z"/></g>
+</defs>
+<use href="#b" fill="#C2A15D" stroke="#C2A15D" stroke-width="3.5" stroke-linejoin="round"/>
+<use href="#b" fill="#EFEAE0"/>
+<g fill="#1E2F4F" fill-opacity=".15"><path d="M94 140C112 132 128 128 138 123L162 123C172 128 188 132 206 140L200 190C192 225 189 245 188 262C192 288 199 304 200 318L100 318C101 304 108 288 112 262C111 245 108 225 100 190Z"/><use href="#sl"/><use href="#sl" transform="translate(300 0) scale(-1 1)"/></g>
+<g id="front"><path d="M138 123L150 142L162 123" fill="none" stroke="#16233B" stroke-opacity=".35" stroke-width="1.5"/><circle cx="150" cy="281" r="1.8" fill="#16233B" fill-opacity=".4"/></g>
+<g id="back"><path d="M125 66C123 44 136 38 150 38C164 38 177 44 175 66C174 80 166 88 150 88C134 88 126 80 125 66Z" fill="#2B3345" fill-opacity=".85"/><path d="M150 118V316" stroke="#16233B" stroke-opacity=".25" stroke-width="1.5" stroke-dasharray="2 4" fill="none"/><path d="M118 172Q130 192 138 216M182 172Q170 192 162 216" stroke="#16233B" stroke-opacity=".2" stroke-width="1.5" fill="none"/></g>
+<g id="fx"></g>
+<g id="hs"></g>
+</svg>
+<figcaption id="hint" aria-live="polite"></figcaption>
+</figure>
+<div>
+<ol class="chips" id="chips"></ol>
+<div class="panel" id="panel"></div>
+<div class="prog"><div id="pt" aria-live="polite"></div><div class="bar2"><i id="pb"></i></div><button type="button" class="send" id="send" disabled></button></div>
+</div>
+</div>
+</div>
+</section>
+
+  <!-- ================= PHOTO ================= -->
+  <section class="section band" id="photo">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker" data-i18n="photoKick">From a photo</span>
+        <h2 data-i18n="photoTitle">Send a photo of any piece</h2>
+        <p class="lead" data-i18n="photoLead">Any men's piece you love. We study it and cut a pattern in your size; the tailor quotes the price after seeing the picture.</p>
+      </div>
+      <div class="photo">
+        <div>
+          <div class="drop rv" id="drop" role="group" aria-labelledby="dropTitleId">
+            <input id="file" type="file" accept="image/*" aria-label="Drop a photo here or press to upload" data-i18n-aria="dropAria" aria-describedby="dropHint dropErr">
+            <span class="empty">
+              <svg viewBox="0 0 100 100" width="160" aria-hidden="true"><rect x="10" y="18" width="80" height="64" rx="8" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="34" cy="42" r="7" fill="currentColor"/><path d="M16 76 L40 52 L58 70 L72 58 L88 76" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <b id="dropTitleId" data-i18n="dropTitle">Drop a photo here</b>
+              <small id="dropHint" data-i18n="dropHint">or press to choose · JPG or PNG</small>
+            </span>
+            <img class="prev" id="prev" alt="Your uploaded photo" data-i18n-aria="prevAlt">
+            <span class="drop-name" id="dropName"></span>
+            <button class="drop-change" type="button" id="dropChange" data-i18n="dropChange">Change photo</button>
+          </div>
+          <p class="drop-err" id="dropErr" role="alert" aria-live="assertive"></p>
+        </div>
+        <div class="pform">
+          <div class="chips" id="gar" role="group" aria-label="Piece" data-i18n-aria="garAria"></div>
+          <div class="fld"><label for="notes" data-i18n="photoNotes">Details (optional)</label><textarea id="notes" placeholder="Colour, fabric, cuffs, pockets…" data-i18n-ph="notesPh"></textarea></div>
+          <div class="hint" data-i18n="photoSizesHint">A photo plus rough sizes is enough; the tailor confirms on a call.</div>
+          <a class="btn wa" id="waP" href="https://wa.me/201093096278" target="_blank" rel="noopener noreferrer" data-i18n="waPhoto">Send photo on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY ================= -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="head rv"><span class="kicker" data-i18n="whyKick">Why us</span><h2 data-i18n="whyTitle">Built on craft</h2></div>
+      <div class="nums">
+        <div class="num rv"><b class="num">25+</b><span data-i18n="why1">years of master tailoring</span></div>
+        <div class="num rv"><b class="num">1,300</b><span data-i18n="why2">EGP base price</span></div>
+        <div class="num rv"><b class="num">14</b><span data-i18n="why3">days to delivery</span></div>
+        <div class="num rv"><b class="num">1</b><span data-i18n="why4">free adjustment</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section band" id="faq">
+    <div class="wrap">
+      <div class="head rv"><span class="kicker" data-i18n="faqKick">Questions</span><h2 data-i18n="faqTitle">Good to know</h2></div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section cta" id="order">
+    <div class="wrap">
+      <h2 data-i18n="ctaTitle">Your jacket, cut for you alone</h2>
+      <p data-i18n="ctaSub">Message us on WhatsApp. The master tailor confirms sizes and price before cutting.</p>
+      <a class="btn wa" href="https://wa.me/201093096278" target="_blank" rel="noopener noreferrer" data-i18n="waOrder">Order on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span data-i18n="rights">© Ahmed Fayed. Made-to-measure men's jackets.</span><span>+20 109 309 6278</span></div></footer>
+<a class="wafab" href="https://wa.me/201093096278" target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp" data-i18n-aria="waOrder"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.7 15l-1.2 4.5 4.6-1.2A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9 1-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4.1.5.4.2.4.7 1.6.7 1.7.1.2.1.3 0 .5-.1.2-.2.3-.3.5-.2.2-.4.4-.2.7.2.3.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.7 1.6.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.3.1.4.2.5.3 0 .2 0 .8-.2 1.4z"/></svg><span data-i18n="waShort">WhatsApp</span></a>
+
+<script>
+/* ============================================================
+   Single-file standalone. No external requests besides Google Fonts.
+   ============================================================ */
+(function(){
+'use strict';
+var WA = '201093096278';
+var BASE = 1300;
+var MAX_PHOTO = 8 * 1024 * 1024; // 8 MB
+
+/* ---------------- i18n ---------------- */
+/* One source of truth; no bilingual pairs. Egyptian Arabic for UI. */
+var T = {
+  en: {
+    skip:'Skip to content', brand:'Ahmed Fayed', langLabel:'Language', menuLabel:'Menu', navMain:'Main', navServices:'Services', navStudio:'Design', navMeasure:'Measure', navPhoto:'From a photo', navFaq:'FAQ', navOrder:'Order now',
+    heroKick:'Made-to-measure jackets by a master tailor', heroT1:'Tailored', heroT2:'on your', heroT3:'measure.', heroLead:'Order a jacket cut for you alone, or send a photo of any piece and we will sew it in your size.', heroCta1:'Design your jacket', heroCta2:'Send a photo',
+    trust1:'years of tailoring', trust2:'days to deliver', trust3:'free adjustment', jacketAlt:'3D render of a made-to-measure men\u2019s jacket',
+    svcKick:'Two ways to get your piece', svcTitle:'Two ways to get your piece.', svc1Title:'Tailored on your measure', svc1a:'Pick fabric, colour and details', svc1b:'Follow the animated guide for 8 measurements', svc1c:'The tailor checks your sizes by call before cutting', svc1PriceNote:'base price', svc1Cta:'Design your jacket', svc2Title:'Send us a photo', svc2a:'Any piece you love: jacket, trousers, shirt', svc2b:'We study the photo and cut a pattern in your size', svc2c:'The tailor quotes the price after seeing the picture', svc2Price:'Any piece', svc2PriceNote:'quoted after the photo', svc2Cta:'Send a photo',
+    procKick:'How it works', procTitle:'Five steps, start to finish', p1:'Choose', p1d:'Fabric, colour and details.', p2:'Measure', p2d:'Animated 8-step guide.', p3:'Confirm', p3d:'Tailor checks sizes by call.', p4:'Order', p4d:'Deposit 30–50% on WhatsApp.', p5:'Deliver', p5d:'~14 days, one free adjustment.',
+    studioKick:'Design your jacket', studioTitle:'Build your jacket', studioLead:'Every choice updates the preview and price. Extras are priced with the tailor.', pvAlt:'Your jacket preview', priceNote:'Base price. Details are priced with the tailor.', waOrder:'Order on WhatsApp', grpFabric:'Fabric', grpColour:'Colour', grpDetails:'Details', tSilk:'Silk lining', tSilkD:'Breathable silk inside.', tPocket:'Extra pocket', tPocketD:'Inside phone pocket.', tName:'Embroidered name', tNameD:'Your name inside.', embLabel:'Name to embroider', embPh:'Ahmed',
+    measKick:'Measuring guide', measTitle:'Eight steps, where to measure', measLead:'Rough numbers are fine — the tailor checks everything with you.', of:'of', entered:'entered', cm:'cm', kg:'kg', next:'Next', back:'Back', review:'Review your order', unitCm:'cm', reqErr:'Enter a number greater than 0.',
+    pvNote:'Illustrative image. Your chosen colour and fabric are shown separately and in the order summary.', photoKick:'From a photo', photoTitle:'Send a photo of any piece', photoLead:'Any men\u2019s piece you love. We study it and cut a pattern in your size; the tailor quotes the price after seeing the picture.', dropAria:'Drop a photo here or press to upload', dropTitle:'Drop a photo here', dropHint:'or press to choose · JPG or PNG', dropChange:'Change photo', prevAlt:'Your uploaded photo', garAria:'Piece', photoNotes:'Details (optional)', notesPh:'Colour, fabric, cuffs, pockets…', photoSizesHint:'A photo plus rough sizes is enough; the tailor confirms on a call.', waPhoto:'Send photo on WhatsApp',
+    dropBadType:'Please choose an image file (JPG or PNG).', dropTooBig:'Image is too large. Please choose a file under 8 MB.',
+    whyKick:'Why us', whyTitle:'Built on craft', why1:'years of master tailoring', why2:'EGP base price', why3:'days to delivery', why4:'free adjustment',
+    faqKick:'Questions', faqTitle:'Good to know', ctaTitle:'Your jacket, cut for you alone', ctaSub:'Message us on WhatsApp. The master tailor confirms sizes and price before cutting.', rights:'© Ahmed Fayed. Made-to-measure men\u2019s jackets.', waShort:'WhatsApp',
+    title:'Ahmed Fayed — Bespoke Men\u2019s Jackets', metaDesc:'Ahmed Fayed — bespoke made-to-measure men\u2019s jackets. Design your jacket or send a photo of any piece. Order on WhatsApp.',
+    waOrderMsg:'Hello Ahmed Fayed, I would like to order a tailored jacket.', waOrderMsgExtra:function(f,c,ex,total){return ['Fabric: '+f,'Colour: '+c,'Details: '+(ex.length?ex.join(', '):'none'),'Base price: 1,300 EGP','Indicative total: '+total+' EGP','Measurements: to confirm by call'].join('\n');},
+    silk:'Silk lining', embroidered:'Embroidered name', pocket:'Extra pocket', waPhotoMsg:'Hello Ahmed Fayed, I would like you to make a piece from a photo.', piece:'Piece', photoSent:'I will send it in this chat', sizesCall:'please call me to take sizes',
+    fabrics:[['Wool','Wool'],['Linen','Linen'],['Cotton','Cotton'],['Gabardine','Gabardine']],
+    colours:[['Navy','#16233B'],['Charcoal','#3B3B3F'],['Brown','#5A3D2B'],['Olive','#4D5A3A'],['Sand','#B9A27C'],['Black','#17130F']],
+    pieces:['Jacket','Trousers','Shirt','Coat','Other'],
+    measures:[
+      ['Height','Head to floor, no shoes','cm','Stand straight; measure without shoes.'],
+      ['Weight','A rough number is fine','kg','Any recent weight is a good reference.'],
+      ['Neck','Around the base of the neck','cm','Keep one finger between tape and neck.'],
+      ['Shoulder','Edge of one shoulder to the other','cm','Across the back, bone to bone, tape flat.'],
+      ['Chest','Fullest part of the chest','cm','Arms relaxed, tape level, snug not tight.'],
+      ['Waist','Natural waist, without pulling','cm','Where the jacket sits; don\u2019t suck in.'],
+      ['Sleeve length','Tip of shoulder to wrist bone','cm','Arm slightly bent, shoulder seam to wrist.'],
+      ['Jacket length','Base of neck (back) to desired end','cm','Down the back to where you want it to end.']
+    ],
+    faq:[
+      ['What\u2019s the base price?','A custom jacket starts at 1,300 EGP. Extras (fabric, silk lining, embroidered name, extra pocket) are priced with the master tailor.'],
+      ['How much is the deposit?','30–50% confirms your order; the remainder is paid on delivery.'],
+      ['When will I receive it?','Handmade in about 14 days, shipped to you, with one free adjustment.'],
+      ['Can you make a piece from a photo?','Yes — any men\u2019s piece. Send a photo; the tailor quotes the price after seeing it.'],
+      ['How are sizes checked?','The master tailor reviews your measurements on a call before anything is cut.'],
+      ['Is there a weekly limit?','Yes, a weekly capacity keeps quality high; if we\u2019re full, you join the waiting list.'],
+      ['What if the fit is off?','One free adjustment, at no cost.']
+    ]
+  },
+  ar: {
+    skip:'تخطّى للمحتوى', brand:'أحمد فايد', langLabel:'اللغة', menuLabel:'القائمة', navMain:'الرئيسي', navServices:'الخدمات', navStudio:'صمّم', navMeasure:'قِيس', navPhoto:'من صورة', navFaq:'أسئلة', navOrder:'اطلب الآن',
+    heroKick:'جاكيتات رجالي مفصّلة من أسطى خياط', heroT1:'مفصّل', heroT2:'على مقاسك', heroT3:'بالظبط', heroLead:'اطلب جاكيت مقصوص لك إنت، أو ابعت صورة أي قطعة وهنخيّطها على مقاسك.', heroCta1:'صمّم جاكيتك', heroCta2:'ابعت صورة',
+    trust1:'سنة خبرة', trust2:'يوم للتسليم', trust3:'تعديل مجاني', jacketAlt:'صورة ثلاثية الأبعاد لجاكيت رجالي مفصّل',
+    svcKick:'طريقتين لاستلام قطعتك', svcTitle:'طريقتين لاستلام قطعتك', svc1Title:'مفصّل على مقاسك', svc1a:'اختار القماش واللون والإضافات', svc1b:'اتبع الشرح المتحرك لـ ٨ مقاسات', svc1c:'الأسطى بيراجع مقاساتك بمكالمة قبل القص', svc1PriceNote:'السعر الأساسي', svc1Cta:'صمّم جاكيتك', svc2Title:'ابعتلنا صورة', svc2a:'أي قطعة رجالي تعجبك: جاكيت، بنطلون، قميص', svc2b:'نذاكر الصورة ونقصّ النموذج على مقاسك', svc2c:'الأسطى بيحدد السعر بعد ما يشوف الصورة', svc2Price:'أي قطعة', svc2PriceNote:'بعد ما نشوف الصورة', svc2Cta:'ابعت صورة',
+    procKick:'إزاي يشتغل', procTitle:'خمس خطوات من الأول للآخر', p1:'اختار', p1d:'القماش واللون والإضافات.', p2:'قِيس', p2d:'شرح متحرك ٨ خطوات.', p3:'أكّد', p3d:'الأسطى بيراجع المقاسات بمكالمة.', p4:'اطلب', p4d:'عربون ٣٠٪–٥٠٪ على واتساب.', p5:'التسليم', p5d:'~١٤ يوم، تعديل مجاني.',
+    studioKick:'صمّم جاكيتك', studioTitle:'ابني جاكيتك', studioLead:'كل اختيار بيحدّث المعاينة والسعر. الإضافات بتتسعّر مع الأسطى.', pvAlt:'معاينة جاكيتك', pvNote:'صورة توضيحية. اللون والقماش اللي اخترتهم بيظهروا منفصلين وفي ملخص الطلب.', priceNote:'السعر الأساسي. الإضافات بتتسعّر مع الأسطى.', waOrder:'اطلب على واتساب', grpFabric:'القماش', grpColour:'اللون', grpDetails:'الإضافات', tSilk:'بطانة حرير', tSilkD:'حرير مريح من جوّه.', tPocket:'جيب إضافي', tPocketD:'جيب داخلي للموبايل.', tName:'تطريز اسم', tNameD:'اسمك مطرّز جوّه.', embLabel:'الاسم اللي يتطرّز', embPh:'أحمد',
+    measKick:'دليل القياس', measTitle:'٨ خطوات… وتعرف تقيس فين', measLead:'الأرقام التقريبية تنفع — الأسطى بيراجع كل حاجة معاك.', of:'من', entered:'تم', cm:'سم', kg:'كجم', next:'الجاي', back:'رجوع', review:'راجع طلبك', unitCm:'سم', reqErr:'اكتب رقم أكبر من صفر.',
+    photoKick:'من صورة', photoTitle:'ابعت صورة أي قطعة', photoLead:'أي قطعة رجالي تعجبك. نذاكرها ونقصّ نموذج على مقاسك، والأسطى بيحدد السعر بعد ما يشوف الصورة.', dropAria:'اسحب صورة هنا أو اضغط للرفع', dropTitle:'اسحب صورة هنا', dropHint:'أو اضغط للاختيار · JPG أو PNG', dropChange:'تغيير الصورة', prevAlt:'صورتك المرفوعة', garAria:'القطعة', photoNotes:'تفاصيل (اختياري)', notesPh:'اللون، القماش، الكمام، الجيوب…', photoSizesHint:'صورة + مقاسات تقريبية تكفي؛ الأسطى بيأكّد بمكالمة.', waPhoto:'ابعت الصورة على واتساب',
+    dropBadType:'اختار ملف صورة (JPG أو PNG).', dropTooBig:'الصورة كبيرة. اختار ملف أقل من ٨ ميجا.',
+    whyKick:'ليه إحنا', whyTitle:'صناعة حقيقية', why1:'سنة خبرة خياطة', why2:'جنيه السعر الأساسي', why3:'يوم للتسليم', why4:'تعديل مجاني',
+    faqKick:'أسئلة', faqTitle:'حاجات تعرفها', ctaTitle:'جاكيتك مقصوص لك إنت', ctaSub:'كلّمنا على واتساب. الأسطى بيأكّد المقاسات والسعر قبل القص.', rights:'© أحمد فايد. جاكيتات رجالي مفصّلة.', waShort:'واتساب',
+    title:'أحمد فايد — جاكيتات رجالي مفصّلة', metaDesc:'أحمد فايد — جاكيتات رجالي مفصّلة على المقاس. صمّم جاكيتك أو ابعت صورة أي قطعة. اطلب على واتساب.',
+    waOrderMsg:'السلام عليكم، عايز أطلب جاكيت تفصيل.', waOrderMsgExtra:function(f,c,ex,total){return ['القماش: '+f,'اللون: '+c,'الإضافات: '+(ex.length?ex.join('، '):'لا'),'السعر الأساسي: ١٣٠٠ جنيه','الإجمالي التقديري: '+total+' جنيه','المقاسات: للتأكيد بمكالمة'].join('\n');},
+    silk:'بطانة حرير', embroidered:'تطريز اسم', pocket:'جيب إضافي', waPhotoMsg:'السلام عليكم، عايز تفصيل قطعة من صورة.', piece:'القطعة', photoSent:'هبعتها في المحادثة دي', sizesCall:'اتصل عليّ لقياس المقاسات',
+    fabrics:[['صوف','Wool'],['كتان','Linen'],['قطن','Cotton'],['غابردين','Gabardine']],
+    colours:[['كحلي','#16233B'],['رمادي غامق','#3B3B3F'],['بني','#5A3D2B'],['زيتي','#4D5A3A'],['رملي','#B9A27C'],['أسود','#17130F']],
+    pieces:['جاكيت','بنطلون','قميص','معطف','تاني'],
+    measures:[
+      ['الطول الكلي','من الراس للأرض بدون حذاء','سم','قف مستقيم واقس من غير حذاء.'],
+      ['الوزن','رقم تقريبي يكفي','كجم','أي وزن حديث كمرجع.'],
+      ['محيط الرقبة','حول أسفل الرقبة','سم','سيب صباع بين الشريط والرقبة.'],
+      ['عرض الكتف','من طرف الكتف للتاني','سم','ورا، من عظمة لعظمة، الشريط مفرود.'],
+      ['محيط الصدر','أعرض جزء في الصدر','سم','إيد مرتاحة، شريط مستوٍ، مش مشدود.'],
+      ['محيط الوسط','الوسط الطبيعي بدون شد','سم','المكان اللي الجاكيت هيقعد فيه.'],
+      ['طول الكم','من طرف الكتف لعضمة المعصم','سم','إيد مثنيّة شوية.'],
+      ['طول الجاكيت','من أسفل الرقبة (ورا) لنهاية الجاكيت','سم','ورا لحد ما تبي يوصل.']
+    ],
+    faq:[
+      ['السعر الأساسي كام؟','الجاكيت المفصّل بيبدأ من ١٬٣٠٠ جنيه. الإضافات (قماش، بطانة حرير، تطريز اسم، جيب إضافي) بتتسعّر مع الأسطى.'],
+      ['العربون كام؟','٣٠٪–٥٠٪ بيأكّد الطلب، والباقي مع الاستلام.'],
+      ['أستلم امتى؟','بالإيد في حوالي ١٤ يوم، ويتشحن لحد عندك، وتعديل مجاني مرة واحدة.'],
+      ['تقدر تعمل قطعة من صورة؟','أيوه — أي قطعة رجالي. ابعت صورة والأسطى بيحدد السعر بعد ما يشوفها.'],
+      ['إزاي بيتم فحص المقاسات؟','الأسطى بيراجع مقاساتك بمكالمة قبل ما يقصّ أي حاجة.'],
+      ['في حد يحدد عدد أسبوعي؟','أيوه، طاقة أسبوعية تحافظ على الجودة؛ لو خلصنا بتلحق قائمة الانتظار.'],
+      ['لو المقاس مش مظبوط؟','تعديل مجاني مرة واحدة.']
+    ]
+  }
+};
+
+var lang = 'en';
+function t(k){ var s=T[lang]; return (s && s[k]!=null)?s[k]:(T.en[k]!=null?T.en[k]:k); }
+function $(id){ return document.getElementById(id); }
+
+function setMeta(){
+  document.documentElement.lang = lang;
+  document.documentElement.dir = (lang==='ar') ? 'rtl' : 'ltr';
+  document.title = t('title');
+  var md = document.querySelector('meta[name="description"]');
+  if (md) md.setAttribute('content', t('metaDesc'));
+  // update document language metadata for SR
+}
+
+function applyI18n(){
+  setMeta();
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var k = el.getAttribute('data-i18n');
+    var v = t(k);
+    if (typeof v === 'string') el.textContent = v;
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(function(el){
+    var v = t(el.getAttribute('data-i18n-aria'));
+    if (typeof v!=='string') return;
+    el.setAttribute('aria-label', v);
+    if (el.tagName==='IMG') el.setAttribute('alt', v);   // keep alt translated too
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach(function(el){
+    var v = t(el.getAttribute('data-i18n-alt'));
+    if (typeof v==='string') el.setAttribute('alt', v);
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(function(el){
+    var v = t(el.getAttribute('data-i18n-ph'));
+    if (typeof v==='string') el.setAttribute('placeholder', v);
+  });
+  // pressed states on toggle
+  $('langEn').setAttribute('aria-pressed', lang==='en'?'true':'false');
+  $('langAr').setAttribute('aria-pressed', lang==='ar'?'true':'false');
+}
+
+function setLang(l){
+  lang = (l==='ar') ? 'ar' : 'en';
+  try{ localStorage.setItem('af-lang', lang); }catch(e){}
+  applyI18n();
+  renderFabrics(); renderColours(); renderPieces(); renderFaq(); updateStudio();
+  if (typeof window.setMeasureLang==='function') window.setMeasureLang(l);
+}
+
+/* ---------------- studio ---------------- */
+var FAB_PATTERNS = [
+  'repeating-linear-gradient(135deg,rgba(0,0,0,.2) 0 1.5px,transparent 1.5px 5px)',
+  'repeating-linear-gradient(0deg,rgba(255,255,255,.28) 0 1px,transparent 1px 4px),repeating-linear-gradient(90deg,rgba(255,255,255,.28) 0 1px,transparent 1px 4px)',
+  'repeating-linear-gradient(45deg,rgba(0,0,0,.12) 0 1px,transparent 1px 4px)',
+  'repeating-linear-gradient(60deg,rgba(0,0,0,.2) 0 2px,transparent 2px 6px)'
+];
+var S = { f:0, c:0, silk:0, name:0, pocket:0, gar:0 };
+
+function renderFabrics(){
+  var fabs = t('fabrics'); var host=$('fabs'); if(!host) return;
+  host.innerHTML = fabs.map(function(f,i){
+    return '<button class="fab" type="button" data-f="'+i+'" aria-pressed="'+(S.f===i)+'"><i style="--x:0;background-color:var(--navy);"></i><span>'+esc(f[0])+'</span></button>';
+  }).join('');
+  // apply pattern overlays
+  host.querySelectorAll('.fab i').forEach(function(el,i){ el.style.backgroundImage = FAB_PATTERNS[i]||''; });
+}
+function renderColours(){
+  var cols = t('colours'); var host=$('cols'); if(!host) return;
+  host.innerHTML = cols.map(function(c,i){
+    return '<button class="sw" type="button" data-c="'+i+'" aria-pressed="'+(S.c===i)+'" aria-label="'+esc(c[0])+'"><i style="background:'+c[1]+'"></i><span>'+esc(c[0])+'</span></button>';
+  }).join('');
+}
+function renderPieces(){
+  var pieces = t('pieces'); var host=$('gar'); if(!host) return;
+  host.innerHTML = pieces.map(function(p,i){ return '<button class="chip" type="button" data-g="'+i+'" aria-pressed="'+(S.gar===i)+'">'+esc(p)+'</button>'; }).join('');
+}
+
+function updateStudio(){
+  var pv=$('pv'); if(!pv) return;
+  // image stays same; keep selection state + price + whatsapp
+  $('tSilk').setAttribute('aria-pressed', !!S.silk);
+  $('tName').setAttribute('aria-pressed', !!S.name);
+  $('tPocket').setAttribute('aria-pressed', !!S.pocket);
+  $('embWrap').hidden = !S.name;
+  // price: base only (extras priced by tailor, kept honest)
+  var n = S.silk + S.name + S.pocket;
+  var ex=[];
+  if(S.silk) ex.push(t('silk'));
+  if(S.name) ex.push(t('embroidered')+($('embName').value.trim()?': '+$('embName').value.trim():''));
+  if(S.pocket) ex.push(t('pocket'));
+  $('total').textContent = BASE.toLocaleString(lang==='ar'?'ar-EG':'en-US');
+  $('ptxt').textContent = n ? (lang==='ar'?('الأساسي + '+n+' إضافة تتسعّر من الأسطى.'):('Base price plus '+n+(n>1?' details':' detail')+' priced by the tailor.')) : t('priceNote');
+  $('waJ').href = waJ(ex);
+  // pressed on fabric/colour
+  document.querySelectorAll('#fabs .fab').forEach(function(b,i){ b.setAttribute('aria-pressed', i===S.f); });
+  document.querySelectorAll('#cols .sw').forEach(function(b,i){ b.setAttribute('aria-pressed', i===S.c); });
+  // selected colour + fabric shown separately (image is illustrative, no fake colour filters)
+  var sel=$('pvSel'); if(sel){
+    var colours=t('colours'), fabrics=t('fabrics');
+    sel.innerHTML =
+      '<span class="chip"><span class="swatch-dot" style="background:'+colours[S.c][1]+'"></span>'+esc(colours[S.c][0])+'</span>'+
+      '<span class="chip">'+esc(fabrics[S.f][0])+'</span>'+
+      (S.silk?'<span class="chip">'+esc(t('silk'))+'</span>':'')+
+      (S.pocket?'<span class="chip">'+esc(t('pocket'))+'</span>':'')+
+      (S.name?'<span class="chip">'+esc(t('embroidered'))+( ($('embName').value||'').trim()?' · '+esc($('embName').value.trim()):'')+'</span>':'');
+  }
+}
+
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+
+function waJ(ex){
+  var fabrics=t('fabrics'), colours=t('colours');
+  var L=[t('waOrderMsg')];
+  L.push(t('waOrderMsgExtra')(fabrics[S.f][0], colours[S.c][0], ex, BASE.toLocaleString(lang==='ar'?'ar-EG':'en-US')));
+  return 'https://wa.me/'+WA+'?text='+encodeURIComponent(L.join('\n'));
+}
+
+/* ---------------- measure ---------------- */
+/* ---------------- faq ---------------- */
+function renderFaq(){
+  var F=t('faq'); var host=$('faqList'); if(!host) return;
+  host.innerHTML = F.map(function(q){ return '<details class="rv"><summary>'+esc(q[0])+'</summary><div class="ans"><p>'+esc(q[1])+'</p></div></details>'; }).join('');
+}
+
+/* ---------------- photo service ---------------- */
+var MAX_MB = 8;
+function initPhoto(){
+  var d=$('drop'), f=$('file'); if(!d||!f) return;
+  function showError(msg){ $('dropErr').textContent = msg||''; }
+  function show(file){
+    if(!file) return;
+    if(!/^image\//.test(file.type)){ showError(t('dropBadType')); return; }
+    if(file.size > MAX_PHOTO){ showError(t('dropTooBig')); return; }
+    showError('');
+    var r=new FileReader();
+    r.onload=function(){ $('prev').src=r.result; d.classList.add('has'); $('dropName').textContent=file.name; };
+    r.readAsDataURL(file);
+  }
+  d.addEventListener('click', function(e){
+    if(e.target.closest('#dropChange')){ e.preventDefault(); f.click(); return; }
+    // label already triggers file input; avoid double-open
+    if(e.target===f) return;
+    // opening handled by native label; nothing extra
+  });
+  $('dropChange').addEventListener('click', function(e){ e.preventDefault(); e.stopPropagation(); f.click(); });
+  d.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ /* native label handles file; ensure keyboard */ } });
+  f.addEventListener('change', function(){ if(f.files&&f.files[0]) show(f.files[0]); });
+  ['dragenter','dragover'].forEach(function(n){ d.addEventListener(n,function(e){ e.preventDefault(); d.classList.add('over'); }); });
+  ['dragleave','drop'].forEach(function(n){ d.addEventListener(n,function(e){ e.preventDefault(); d.classList.remove('over'); }); });
+  d.addEventListener('drop', function(e){
+    var fl=e.dataTransfer&&e.dataTransfer.files[0]; if(!fl) return;
+    try{ var dt=new DataTransfer(); dt.items.add(fl); f.files=dt.files; }catch(x){}
+    show(fl);
+  });
+  // clear file to allow re-pick same file + remove preview
+  $('dropChange').addEventListener('click', function(){ /* after opening */ });
+  $('notes').addEventListener('input', updateWaP);
+  $('waP').setAttribute('href', waP());
+}
+function updateWaP(){ $('waP').href = waP(); }
+function waP(){
+  var pieces=t('pieces');
+  var L=[t('waPhotoMsg'), t('piece')+': '+pieces[S.gar]];
+  var n=($('notes')&&$('notes').value.trim())||'';
+  if(n) L.push((lang==='ar'?'تفاصيل: ':'Details: ')+n);
+  L.push((lang==='ar'?'الصورة: ':'Photo: ')+t('photoSent'));
+  L.push((lang==='ar'?'المقاسات: ':'Sizes: ')+t('sizesCall'));
+  return 'https://wa.me/'+WA+'?text='+encodeURIComponent(L.join('\n'));
+}
+
+/* ---------------- mobile menu ---------------- */
+function initMenu(){
+  var b=$('menuBtn'), nav=$('nav'); if(!b||!nav) return;
+  function close(){ nav.classList.remove('menu-open'); b.setAttribute('aria-expanded','false'); }
+  b.addEventListener('click', function(e){
+    e.stopPropagation();
+    var open=nav.classList.toggle('menu-open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+  });
+  nav.querySelectorAll('.links a').forEach(function(a){ a.addEventListener('click', close); });
+  document.addEventListener('click', function(e){ if(nav.classList.contains('menu-open') && !e.target.closest('.nav')) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  window.addEventListener('resize', function(){ if(window.innerWidth>1000) close(); });
+}
+
+/* ---------------- nav scroll ---------------- */
+function sc(){
+  var nav=$('nav'); if(nav) nav.classList.toggle('stuck', window.scrollY>8);
+}
+
+/* ---------------- events ---------------- */
+document.addEventListener('click', function(e){
+  var b=e.target.closest('button'); if(!b) return;
+  if(b.dataset.f!=null){ S.f=+b.dataset.f; updateStudio(); }
+  else if(b.dataset.c!=null){ S.c=+b.dataset.c; updateStudio(); }
+  else if(b.id==='tSilk'){ S.silk=S.silk?0:1; updateStudio(); }
+  else if(b.id==='tName'){ S.name=S.name?0:1; updateStudio(); }
+  else if(b.id==='tPocket'){ S.pocket=S.pocket?0:1; updateStudio(); }
+  else if(b.dataset.g!=null){ S.gar=+b.dataset.g; updateWaP(); document.querySelectorAll('#gar .chip').forEach(function(c,i){ c.setAttribute('aria-pressed', i===S.gar); }); }
+  else if(b.id==='langEn'){ setLang('en'); }
+  else if(b.id==='langAr'){ setLang('ar'); }
+});
+document.addEventListener('input', function(e){
+  var el=e.target;
+  if(el.id==='embName'){ updateStudio(); return; }
+});
+window.addEventListener('scroll', sc, {passive:true});
+window.addEventListener('resize', sc);
+
+/* ---------------- init ---------------- */
+function detectLang(){
+  try{ var saved=localStorage.getItem('af-lang'); if(saved==='en'||saved==='ar') return saved; }catch(e){}
+  var n=(navigator.language||'en').toLowerCase();
+  return n.indexOf('ar')===0 ? 'ar' : 'en';
+}
+lang = detectLang();
+applyI18n();
+renderFabrics(); renderColours(); renderPieces(); renderFaq();
+updateStudio(); initPhoto(); initMenu(); sc();
+})();
+</script>
+<script>
+(()=>{
+const M={
+en:{title:'How to measure yourself',lead:'Tap a part of the body, or a step, to see exactly where the tape goes. Rough numbers are fine; the tailor confirms everything with you.',hint:'Tap a body part or a step to see where to measure.',fig:'Body diagram showing where to measure',
+names:['Height','Weight','Neck','Shoulder','Chest','Waist','Sleeve length','Jacket length'],
+how:['Stand straight with your back against a wall, no shoes. Measure from the floor to the top of your head.','Stand on a scale with no shoes and no heavy clothes.','Wrap the tape around the base of your neck, where a shirt collar sits. Not on the Adam\u2019s apple.','From the back, measure in a straight line from the edge of one shoulder bone to the other, across the upper back.','Wrap the tape around the fullest part of your chest, under the armpits and across the shoulder blades, level with the floor.','Wrap the tape around your natural waist, the narrowest part above the belly button. Not where your trousers sit.','Keep your arm relaxed at your side. Measure from the shoulder point down the outside of the arm to the wrist bone.','From the back, measure from the bump at the base of the neck straight down the spine to where you want the jacket to end.'],
+tip:['Look straight ahead and ask someone to lay a book flat on your head.','Weigh yourself in the morning for a steady number.','Keep two fingers between the tape and your neck so it is not tight.','Lift your arm to feel the shoulder bone. Do not follow the curve over the shoulder.','Breathe normally. The tape should lie flat, not pulled tight.','Relax your stomach. Do not pull it in.','A slightly bent arm is fine. Let the tape follow the arm.','Usually around the middle of the hips. Pick the spot you like.'],
+tipL:'Tip:',back:'Back',next:'Next',done:'Finish',replay:'Replay',cm:'cm',kg:'kg',prog:'{n} of 8 entered',send:'Send measurements on WhatsApp',err:'Check this number: it should be between {a} and {b}.',start:'Start',end:'End',around:'Around',navel:'Above the navel',msg:'Hello Ahmed, here are my measurements:'},
+ar:{title:'إزاي تقيس نفسك',lead:'دوس على أي جزء في الجسم أو على أي خطوة، وهتشوف الشريط هيتحط فين بالظبط. الأرقام التقريبية مش مشكلة، والأسطى بيأكد كل حاجة معاك.',hint:'دوس على جزء من الجسم أو على خطوة علشان تعرف تقيس منين.',fig:'رسم للجسم يوضح أماكن القياس',
+names:['الطول','الوزن','الرقبة','الكتف','الصدر','الوسط','طول الكُم','طول الجاكيت'],
+how:['قف مستقيم وضهرك للحيطة بدون جزمة. قِس من الأرض لحد أعلى راسك.','اقف على ميزان بدون جزمة وبدون هدوم تقيلة.','لُف الشريط حوالين أسفل الرقبة، مكان ياقة القميص، مش على الحنجرة.','من ورا، قِس بخط مستقيم من حرف عضمة الكتف لحرف الكتف التاني، على أعلى الضهر.','لُف الشريط حوالين أعرض جزء في الصدر، تحت الإبط وفوق لوح الكتف، ومتوازي مع الأرض.','لُف الشريط حوالين الوسط الطبيعي، أضيق مكان فوق السرة، مش مكان البنطلون.','سيب دراعك مرتاح جنب جسمك. قِس من حرف الكتف على طول الدراع من برا لحد عضمة الرسغ.','من ورا، قِس من النتوء اللي في أسفل الرقبة على طول العمود الفقري لحد المكان اللي عايز الجاكيت يخلّص عنده.'],
+tip:['بُص قدامك واطلب من حد يحط كتاب مسطّح فوق راسك.','الأفضل تتوزن الصبح علشان الرقم يبقى ثابت.','سيب صباعين بين الشريط والرقبة علشان مايبقاش ضيق.','ارفع دراعك تحس بعضمة الكتف. متمشيش مع انحناء الكتف.','اتنفّس عادي. الشريط يبقى مفرود مش مشدود.','ريّح بطنك ومتشدّهاش لجوه.','الدراع المثنية شوية عادي. خلّي الشريط ماشي مع الدراع.','غالباً منتصف الأرداف تقريباً. اختار المكان اللي يعجبك.'],
+tipL:'نصيحة:',back:'السابق',next:'التالي',done:'خلصت',replay:'إعادة',cm:'سم',kg:'كجم',prog:'تم إدخال {n} من 8',send:'ابعت القياسات على واتساب',err:'راجع الرقم: لازم يبقى بين {a} و{b}.',start:'البداية',end:'النهاية',around:'حوالين',navel:'فوق السرة',msg:'أهلاً أستاذ أحمد، دي قياساتي:'}};
+const R=[[100,230],[30,250],[25,60],[30,70],[60,170],[50,170],[40,90],[50,110]],U=['cm','kg','cm','cm','cm','cm','cm','cm'],
+Z=['0 0 300 600','0 0 300 600','40 50 220 125','10 85 280 140','0 90 300 230','15 170 270 200','-75 95 345 240','10 70 290 320'],V='fffbffbb',
+HS=[[150,38],[150,576],[150,108],[208,142],[150,190],[150,262],[74,230],[150,310]];
+const $=s=>document.querySelector(s),svg=$('#fig'),fx=$('#fx'),RM=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
+let lang='en',cur=-1,val={},raf,uid=0;
+try{const d=document.documentElement.lang;if(d==='ar'||d==='en')lang=d;const s=localStorage.getItem('af-lang');if(s==='ar'||s==='en')lang=s}catch(e){}
+const T=k=>M[lang][k],nm=i=>T('names')[i];
+const pt=(x,y,d)=>`<circle class="pt" cx="${x}" cy="${y}" r="5" data-a="pop" data-d="${d}"/>`,
+gd=(d,l)=>`<path class="gd" d="${d}" data-a="fade" data-d="${l}"/>`,
+lab=(x,y,s,a,d,c='')=>`<g class="lab ${c}" transform="translate(${x} ${y})" data-a="fade" data-d="${d}"><rect rx="9"/><text text-anchor="${a}" dy=".35em">${s}</text></g>`;
+function tape(d,w,dl,du,ring){const id='mk'+uid++;
+return(ring?`<path class="back" d="${ring}" style="stroke-width:${w}" data-a="fade" data-d="${dl}"/>`:'')+
+`<mask id="${id}" maskUnits="userSpaceOnUse" x="-100" y="-100" width="600" height="800"><path class="mk" d="${d}" pathLength="100" data-a="draw" data-d="${dl}" data-u="${du}"/></mask>`+
+`<path class="tp" d="${d}" pathLength="100" style="stroke-width:${w}" data-a="draw" data-d="${dl}" data-u="${du}"/>`+
+`<path class="tk" d="${d}" style="stroke-width:${w};stroke-dasharray:${w*.2} ${w*1.2}" mask="url(#${id})"/>`}
+const F=[
+()=>gd('M14 18V568',0)+gd('M8 566H292',0)+`<rect class="bk" x="126" y="31" width="48" height="7" rx="2" data-a="fade" data-d="200"/>`+gd('M126 34H30',500)+tape('M30 566V34',6,300,1500)+pt(30,566,300)+pt(30,34,1700)+lab(38,552,T('start'),'start',500,'se')+lab(38,52,T('end'),'start',1800,'se')+lab(38,470,nm(0),'start',1900),
+()=>`<rect class="sc" x="92" y="566" width="116" height="16" rx="6" data-a="fade"/><rect class="scr" x="126" y="569.5" width="48" height="9" rx="2" data-a="fade" data-d="300"/><text class="kg" x="150" y="576.4" text-anchor="middle" data-a="fade" data-d="500">${T('kg')}</text><ellipse class="ft" cx="128" cy="560" rx="22" ry="5" data-a="pop" data-d="200"/><ellipse class="ft" cx="172" cy="560" rx="22" ry="5" data-a="pop" data-d="300"/>`+lab(216,574,nm(1),'start',700),
+()=>tape('M135 114A15 5 0 0 0 165 114',4.5,300,1300,'M135 114A15 5 0 0 1 165 114')+lab(182,96,nm(2),'start',1500)+lab(182,126,T('around'),'start',1700,'se'),
+()=>pt(92,142,200)+pt(208,142,1500)+tape('M92 142H208',5,300,1200)+lab(86,126,T('start'),'end',300,'se')+lab(214,126,T('end'),'start',1500,'se')+lab(150,170,nm(3),'middle',1600),
+()=>tape('M94 190A56 9 0 0 0 206 190',6,300,1500,'M94 190A56 9 0 0 1 206 190')+lab(150,162,nm(4),'middle',1700)+lab(150,220,T('around'),'middle',1800,'se'),
+()=>tape('M106 262A44 7 0 0 0 194 262',6,300,1500,'M106 262A44 7 0 0 1 194 262')+lab(150,236,nm(5),'middle',1700)+lab(150,302,T('navel'),'middle',1800,'se'),
+()=>pt(90,141,200)+pt(70,300,1700)+tape('M90 141C82 148 79 158 78 170L72 240C70 268 70 288 70 300',5,300,1400)+lab(52,222,nm(6),'end',1600)+lab(98,126,T('start'),'end',300,'se')+lab(56,310,T('end'),'end',1700,'se'),
+()=>gd('M90 330H210',1400)+tape('M150 116V330',6,300,1500)+pt(150,116,200)+pt(150,330,1700)+lab(160,112,T('start'),'start',300,'se')+lab(160,342,T('end'),'start',1700,'se')+lab(160,224,nm(7),'start',1800)];
+function anim(){fx.querySelectorAll('[data-a]').forEach(e=>{const a=e.dataset.a,k=a=='draw'?[{strokeDashoffset:100},{strokeDashoffset:0}]:a=='pop'?[{opacity:0,transform:'scale(.2)'},{opacity:1,transform:'scale(1)'}]:[{opacity:0},{opacity:1}],r=RM();
+e.animate(k,{duration:r?0:+e.dataset.u||500,delay:r?0:+e.dataset.d||0,fill:'both',easing:'cubic-bezier(.22,.61,.36,1)'})})}
+function zoom(z){const to=z.split(' ').map(Number),b=svg.viewBox.baseVal,from=[b.x,b.y,b.width,b.height];cancelAnimationFrame(raf);
+if(RM()){svg.setAttribute('viewBox',z);return}
+const t0=performance.now();(function f(n){const p=Math.min(1,(n-t0)/600),e=1-Math.pow(1-p,3);svg.setAttribute('viewBox',from.map((v,i)=>v+(to[i]-v)*e).join(' '));if(p<1)raf=requestAnimationFrame(f)})(t0)}
+function play(){fx.innerHTML=F[cur]();fx.querySelectorAll('.lab').forEach(g=>{const x=g.querySelector('text').getBBox(),r=g.querySelector('rect');r.setAttribute('x',x.x-7);r.setAttribute('y',x.y-4);r.setAttribute('width',x.width+14);r.setAttribute('height',x.height+8)});
+anim();svg.dataset.v=V[cur]=='f'?'f':'b';zoom(Z[cur])}
+function select(i){cur=i;svg.classList.add('pl');play();ui();$('#hint').textContent=nm(i)}
+function ui(){document.querySelectorAll('#chips button').forEach((b,i)=>{b.querySelector('.cn').textContent=nm(i);b.setAttribute('aria-current',i===cur);b.classList.toggle('done',i in val)});
+document.querySelectorAll('.hs').forEach((g,i)=>g.classList.toggle('on',i===cur));panel();prog()}
+function panel(){const P=$('#panel');if(cur<0){P.innerHTML=`<p class="empty">${T('hint')}</p>`;return}
+const u=T(U[cur]),[a,b]=R[cur];
+P.innerHTML=`<h3><span class="nb">${cur+1}</span>${nm(cur)}</h3><p>${T('how')[cur]}</p><p class="tip"><b>${T('tipL')}</b> ${T('tip')[cur]}</p><label class="fld"><input id="inp" type="number" inputmode="decimal" min="${a}" max="${b}" step="0.1" value="${val[cur]??''}" aria-label="${nm(cur)} (${u})"><span>${u}</span></label><p class="err" id="err" role="alert"></p><div class="nav"><button type="button" id="pv"${cur?'':' disabled'}>${T('back')}</button><button type="button" id="rp">${T('replay')}</button><button type="button" class="pri" id="nx">${cur<7?T('next'):T('done')}</button></div>`;
+$('#inp').oninput=e=>{const v=parseFloat(e.target.value),er=$('#err');if(isNaN(v)){delete val[cur];er.textContent=''}else if(v<a||v>b){delete val[cur];er.textContent=T('err').replace('{a}',a).replace('{b}',b)}else{val[cur]=v;er.textContent=''}document.querySelectorAll('#chips button')[cur].classList.toggle('done',cur in val);prog()};
+$('#pv').onclick=()=>select(cur-1);$('#rp').onclick=play;$('#nx').onclick=()=>cur<7?select(cur+1):$('#send').scrollIntoView({behavior:RM()?'auto':'smooth',block:'center'})}
+function prog(){const n=Object.keys(val).length;$('#pt').textContent=T('prog').replace('{n}',n);$('#pb').style.width=n/8*100+'%';$('#send').disabled=n<8;$('#send').textContent=T('send')}
+$('#send').onclick=()=>{const l=NM_().map((s,i)=>`${s}: ${val[i]} ${T(U[i])}`);window.open('https://wa.me/201093096278?text='+encodeURIComponent(T('msg')+'\n'+l.join('\n')),'_blank','noopener')};
+const NM_=()=>T('names');
+function setLang(l){lang=l;try{localStorage.setItem('af-lang',l)}catch(e){}
+document.documentElement.lang=l;document.documentElement.dir=l=='ar'?'rtl':'ltr';
+document.querySelectorAll('[data-m]').forEach(e=>e.textContent=T(e.dataset.m));$('#figT').textContent=T('fig');
+if(cur>=0){play();$('#hint').textContent=nm(cur)}else $('#hint').textContent=T('hint');ui()}
+$('#chips').innerHTML=Array.from({length:8},(_,i)=>`<li><button type="button" data-i="${i}"><span class="nb">${i+1}</span><span class="cn"></span></button></li>`).join('');
+$('#chips').onclick=e=>{const b=e.target.closest('button');b&&select(+b.dataset.i)};
+$('#hs').innerHTML=HS.map((p,i)=>`<g class="hs" data-i="${i}" transform="translate(${p})"><circle r="18" fill="transparent"/><circle class="r" r="8"/><circle class="c" r="3"/></g>`).join('');
+$('#hs').onclick=e=>{const g=e.target.closest('.hs');g&&select(+g.dataset.i)};
+window.setMeasureLang=setLang;setLang(lang);
+})();
+</script>
+</body>
+</html>
